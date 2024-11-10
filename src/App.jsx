@@ -6,10 +6,10 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg-primary w-full overflow-hidden'>
       <h1>Bank App</h1>
 
-    </>
+    </div>
   )
 }
 
