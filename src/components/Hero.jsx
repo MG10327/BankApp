@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../Style'
-import { discount } from '../assets'
+import { discount, robot } from '../assets'
 import GetStarted from './GetStarted'
 
 const Hero = () => {
@@ -36,6 +36,18 @@ const Hero = () => {
           annual fees.
         </p>
 
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+          <img src={robot} alt="billing" className='w-[100%] h-[100%] relative z-[5]' />
+
+          <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink_gradient' />
+          <div className='absolute z-[1] rounded-full bottom-40 white__gradient w-[40%] h-[80%] top-0 pink_gradient' />
+          <div className='absolute z-[0] right-20 bottom-20 blue__gradient w-[40%] h-[40%] top-0 pink_gradient' />
+
+        </div>
+      </div>
+
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted/>
       </div>
     </section>
   )
